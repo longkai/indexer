@@ -8,6 +8,7 @@ An indexer view like Wechat' s.
 
 ### Usage
 ```xml
+<!-- Recommand adding bits of padding since the text width may too small making touch hard -->
 <com.xiaolongtongxue.indexer.IndexerView
       android:id="@+id/indexer"
       android:layout_alignParentRight="true"
@@ -36,6 +37,11 @@ indexerView.setOnIndexChangeListener(new IndexerView.OnIndexerChangeListener() {
     // do sth with the new index...
   }
 });
+
+// you can also change the text size and color
+indexerView.setTextColor(Color.BLACK);
+indexerView.setTextSize(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 14, getResources().getDisplayMetrics()));
+// ...
 ```
 
 ### TODO
