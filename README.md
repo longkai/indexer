@@ -9,7 +9,7 @@ An indexer view like Wechat' s.
 ### Usage
 ```groovy
 // import to your build.gradle
-compile 'com.xiaolongtongxue:indexer:1.0'
+compile 'com.xiaolongtongxue:indexer:${choose you version}'
 ```
 
 ```xml
