@@ -33,8 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
     // call the listener
     indexerView.setOnIndexChangeListener(new IndexerView.OnIndexerChangeListener() {
-      @Override public void onIndexChange(String index) {
-        textView.setText(index);
+      @Override public void onIndexChange(int index, String key) {
+        // do sth with index or key
+        textView.setText(key);
       }
     });
 

@@ -38,8 +38,8 @@ indexerView.setAlphabets("ABCDEFG");
 
 // call the listener
 indexerView.setOnIndexChangeListener(new IndexerView.OnIndexerChangeListener() {
-  @Override public void onIndexChange(String index) {
-    // do sth with the new index...
+  @Override public void onIndexChange(int index, String key) {
+    // do sth with index or key
   }
 });
 

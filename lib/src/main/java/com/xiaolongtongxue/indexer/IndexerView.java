@@ -71,11 +71,11 @@ public class IndexerView extends View {
             }
             y -= getPaddingTop();
             float unit = paint.descent() - paint.ascent();
-            int result = (int) (y / unit);
-            String key = alphabets[result];
+            int index = (int) (y / unit);
+            String key = alphabets[index];
             if (!TextUtils.equals(key, lastKey)) {
               if (onChange != null) {
-                onChange.onIndexChange(key);
+                onChange.onIndexChange(index, key);
               }
               lastKey = key;
             }
@@ -181,6 +181,6 @@ public class IndexerView extends View {
   }
 
   public interface OnIndexerChangeListener {
-    void onIndexChange(String index);
+    void onIndexChange(int index, String key);
   }
 }
