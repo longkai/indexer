@@ -7,6 +7,11 @@ An indexer view like Wechat' s.
 ![Screenshot](art/screenshot.gif)
 
 ### Usage
+```groovy
+// import to your build.gradle
+compile 'com.xiaolongtongxue:indexer:1.0'
+```
+
 ```xml
 <!-- Recommand adding bits of padding since the text width may too small making touch hard -->
 <com.xiaolongtongxue.indexer.IndexerView
@@ -43,9 +48,6 @@ indexerView.setTextColor(Color.BLACK);
 indexerView.setTextSize(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 14, getResources().getDisplayMetrics()));
 // ...
 ```
-
-### TODO
-Makes it a gradle library
 
 ### License
 MIT

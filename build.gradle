@@ -21,4 +21,8 @@ ext {
       android: 'com.android.application',
       library: 'com.android.library',
   ]
+
+  PUBLISH_GROUP_ID = 'com.xiaolongtongxue'
+  PUBLISH_ARTIFACT_ID = 'indexer'
+  PUBLISH_VERSION = '1.0'
 }
