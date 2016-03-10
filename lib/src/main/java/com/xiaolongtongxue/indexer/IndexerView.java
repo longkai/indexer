@@ -124,7 +124,7 @@ public class IndexerView extends View {
       String s = alphabets[i];
       paint.getTextBounds(s, 0, s.length(), rect);
 
-      // since the uppercase has no bottom, to makes it looks more nice, put the baseline up to the bottom:)
+      // since the uppercase has no bottom, to makes it looks nicer, put the baseline down to the bottom:)
       canvas.drawText(s, 0, s.length(), (getWidth() - rect.width()) / 2, yOffset - rect.top + fontMetrics.bottom, paint);
       yOffset += (paint.descent() - paint.ascent());
     }
